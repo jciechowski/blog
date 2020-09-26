@@ -1,4 +1,5 @@
-## Are interfaces with one method and one implementation worth it? Give delegate a try!
+## Interface with one implementation?
+Give delegate a try!
 
 Interfaces with only one method and one implementation always seem awkward to me. I felt it in my gut but wasn't able to articulate what's exactly wrong with them. Luckily, recently someone showed me another way of solving this issue.
 
