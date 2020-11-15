@@ -1,7 +1,7 @@
 ## String Calculator Kata in F#
 
-Since @theimowski introduced me to F# years ago, I wanted to try it someday. Finally, I feel like I'm ready for this challenge.
-And following @swyx suggestion to learn in public, I'll try to explain each step in the form of a blog post.
+Since  [@theimowski](https://twitter.com/theimowski)  introduced me to F# years ago, I wanted to try it someday. Finally, I feel like I'm ready for this challenge.
+And following  [@swyx](https://twitter.com/swyx)  suggestion to learn in public, I'll try to explain each step in the form of a blog post.
 
 I will start with one of my favorites, yet nothing complicated TDD kata -  [String calculator](https://kata-log.rocks/string-calculator-kata)  
 And now it's coding time!
@@ -82,5 +82,5 @@ let ``Passing numbers with a seperator adds them`` (input, expected) =
 We implemented first two step from the Kata description. We can stop here for now. 
 Full code is available on  [github](https://github.com/jciechowski/StringCalculatorKataFSharp).
 
-In another episode, I will introduce custom delimiters and Either monad, if I understood it by then.
+In another episode, I will introduce custom delimiters.
 
