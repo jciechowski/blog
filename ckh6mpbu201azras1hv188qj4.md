@@ -3,7 +3,16 @@
 Since  [@theimowski](https://twitter.com/theimowski)  introduced me to F# years ago, I wanted to try it someday. Finally, I feel like I'm ready for this challenge.
 And following  [@swyx](https://twitter.com/swyx)  suggestion to learn in public, I'll try to explain each step in the form of a blog post.
 
-I will start with one of my favorites, yet nothing complicated TDD kata -  [String calculator](https://kata-log.rocks/string-calculator-kata)  
+I will start with one of my favorites, yet nothing complicated TDD kata -  [String calculator](https://kata-log.rocks/string-calculator-kata).    
+
+This is a first part of a series:  
+
+1. https://blog.ciechowski.net/string-calculator-kata-in-f (This one)
+1. https://blog.ciechowski.net/string-calculator-kata-in-f-another-encounter
+2. https://blog.ciechowski.net/string-calculator-kata-in-f-fall-of-exceptions
+
+
+
 And now it's coding time!
 
 ## Adding single numbers
