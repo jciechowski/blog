@@ -7,6 +7,13 @@ The plan for today is to implement step 3,4 and from the [description ](https://
 - support custom delimiters passed in input.
 - Besides, we will do some refactoring after making everything work.
 
+
+This is a second part of a series:  
+
+1.  [String Calculator Kata](https://blog.ciechowski.net/string-calculator-kata-in-f ) 
+1.  [Another encounter](https://blog.ciechowski.net/string-calculator-kata-in-f-another-encounter) (this one)
+2. [Fall of exceptions](https://blog.ciechowski.net/string-calculator-kata-in-f-fall-of-exceptions)
+
 ## Additional delimiter
 Obviously, we start with a test:
 ```
