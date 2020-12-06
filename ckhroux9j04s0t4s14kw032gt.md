@@ -7,8 +7,10 @@ Today we are going to implement handling negative values and values that are gre
 This is a third part of a series:  
 
 1.  [String Calculator Kata](https://blog.ciechowski.net/string-calculator-kata-in-f ) 
-1.  [Another encounter](https://blog.ciechowski.net/string-calculator-kata-in-f-another-encounter)
-2. [Fall of exceptions](https://blog.ciechowski.net/string-calculator-kata-in-f-fall-of-exceptions) (this one)
+2.  [Another encounter](https://blog.ciechowski.net/string-calculator-kata-in-f-another-encounter)
+3. [Fall of exceptions](https://blog.ciechowski.net/string-calculator-kata-in-f-fall-of-exceptions) (this one)
+4. [Happy end](https://blog.ciechowski.net/string-calculator-kata-in-f-happy-end)
+
 
 Finally, we can try to handle exceptions in a functional way.  
 Spoiler alert! There won't be any exceptions.
