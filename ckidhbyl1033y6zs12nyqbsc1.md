@@ -2,6 +2,14 @@
 
 Our calculator works pretty well so far. We were also able to use a few functional techniques in the process. Railway programming and composition is one of them.
   
+
+This is a second part of a series:  
+
+1.  [String Calculator Kata](https://blog.ciechowski.net/string-calculator-kata-in-f ) 
+2.  [Another encounter](https://blog.ciechowski.net/string-calculator-kata-in-f-another-encounter)
+3. [Fall of exceptions](https://blog.ciechowski.net/string-calculator-kata-in-f-fall-of-exceptions)
+4. [Happy end](https://blog.ciechowski.net/string-calculator-kata-in-f-happy-end)  (this one)
+
 Today we are going to focus on different types of delimiters:
 * a delimiter can be of any length
 * user can pass multiple delimiters of any size as an input
