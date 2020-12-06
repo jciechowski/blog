@@ -8,8 +8,9 @@ I will start with one of my favorites, yet nothing complicated TDD kata -  [Stri
 This is a first part of a series:  
 
 1. [String Calculator Kata](https://blog.ciechowski.net/string-calculator-kata-in-f) (this one)
-1. [Another encounter](https://blog.ciechowski.net/string-calculator-kata-in-f-another-encounter)
-2. [Fall of exceptions](https://blog.ciechowski.net/string-calculator-kata-in-f-fall-of-exceptions)
+2. [Another encounter](https://blog.ciechowski.net/string-calculator-kata-in-f-another-encounter)
+3. [Fall of exceptions](https://blog.ciechowski.net/string-calculator-kata-in-f-fall-of-exceptions)
+4. [Happy end](https://blog.ciechowski.net/string-calculator-kata-in-f-happy-end)
 
 
 
