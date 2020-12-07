@@ -3,9 +3,9 @@
 Since  [@theimowski](https://twitter.com/theimowski)  introduced me to F# years ago, I wanted to try it someday. Finally, I feel like I'm ready for this challenge.
 And following  [@swyx](https://twitter.com/swyx)  suggestion to learn in public, I'll try to explain each step in the form of a blog post.
 
-I will start with one of my favorites, yet nothing complicated TDD kata -  [String calculator](https://kata-log.rocks/string-calculator-kata).    
+I will start with one of my favorites, yet nothing complicated, TDD kata -  [String calculator](https://kata-log.rocks/string-calculator-kata).    
 
-This is a first part of a series:  
+This article is the first part of a series:  
 
 1. [String Calculator Kata](https://blog.ciechowski.net/string-calculator-kata-in-f) (this one)
 2. [Another encounter](https://blog.ciechowski.net/string-calculator-kata-in-f-another-encounter)
@@ -14,11 +14,11 @@ This is a first part of a series:
 
 
 
-And now it's coding time!
+And now it's the coding time!
 
 ## Adding single numbers
 
-Following TDD rules, we will start with a test
+Following TDD rules, we will start with a test.
 ```
 [<Fact>]
 let ``Passing empty value returns 0`` =
@@ -53,8 +53,8 @@ let Add (numbers: string): int =
 ```
 
 ## Numbers with a delimiter
-Let's try more complicated case. The next step is to add numbers separated by a comma.
-First the test:
+Let's try a more complicated case. The next step is to add numbers separated by a comma.
+First, the test:
 ```
 [<Fact>]
 let ``Passing numbers with a seperator adds them`` () =
@@ -62,7 +62,7 @@ let ``Passing numbers with a seperator adds them`` () =
     Assert.Equal(3, result)
 ```
 
-This time, we have to adjust pattern matching we used earlier
+This time, we have to adjust the pattern matching we used earlier.
 ```
 let Add (numbers: string): int =
     match numbers.Length with
@@ -75,10 +75,10 @@ let Add (numbers: string): int =
 
 Currently, we have three cases based on the length of our input.
 1. 0 for the input of length 0, which means an empty string
-2. returns the same value converted to integer when a single number was passed
-3. And now the best part! We split the numbers by comma, map each number in a string format to integer and finally sum the result. We do it in full F# force using the pipeline operator, which feeds output from previous function to next one. Doesn't it look great?
+2. returns the same value converted to integer when passed a single number
+3. And now the best part! We split the numbers by comma, map each digit in a string format to integer and finally sum the result. We do it in full F# force using the pipeline operator, which feeds output from the previous function to the next. Doesn't it look great?
 
-Finally, we can add a few more tests, just to be sure:
+Finally, we can add a few more tests to be sure:
 ```
 [<Theory>]
 [<InlineData("1,2", 3)>]
@@ -89,7 +89,7 @@ let ``Passing numbers with a seperator adds them`` (input, expected) =
     Assert.Equal(expected, result)
 ```
 
-We implemented first two step from the Kata description. We can stop here for now. 
+We implemented the first two steps from the Kata description. We can stop here for now. 
 Full code is available on  [github](https://github.com/jciechowski/StringCalculatorKataFSharp).
 
 In another episode, I will introduce custom delimiters.
