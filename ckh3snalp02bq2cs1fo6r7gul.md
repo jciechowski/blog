@@ -52,7 +52,7 @@ Each time our generator will give us a bit different data. This strategy leads t
 ## Strange things can happen
 Because the input is random and generated each time we run our test, there is a possibility that our suite will fail from time to time. And that's perfectly fine! Every time this happens, we get a report with parameters that proved our property false. With such knowledge, we can track the bug and fix it. And we get all that for free with property-based testing.
 
-Another benefit of PB testing is that it forces us to think about our unit differently. We can't just think of examples looking at the implementation and just put them into test code. Before that, we have to define our inputs' domain and describe how our code has to behave. And for me, that's the most significant advantage of property-based testing. It makes you think before coding.
+Another benefit of PB testing is that it forces us to think about our unit differently. We can't just think of examples looking at the implementation and just put them into test code. Before that, we have to define our inputs' domain and describe how our code behaves. And for me, that's the most significant advantage of property-based testing. It makes you think before coding.
 
 
 
