@@ -4,7 +4,7 @@ So far, we can only add numbers delimited by a comma.
 The plan for today is to implement step 3,4 and from the [description ](https://kata-log.rocks/string-calculator-kata), which is
 
 - handle new line "\n" as a delimiter, in addition to comma
-- support custom delimiters passed in input.
+- support custom delimiters passed in the input.
 - Besides, we will do some refactoring after making everything work.
 
 
@@ -17,7 +17,7 @@ This is a second part of a series:
 
 
 ## Additional delimiter
-Obviously, we start with a test:
+We start with a test:
 ```
 [<Fact>]
 let ``Passing numbers with a newline separator adds them`` () =
@@ -33,12 +33,13 @@ let Add (numbers: string): int =
     | 0 -> 0
     | 1 -> int numbers
     | _ ->
-        numbers.Split([| ','; '\n' |], StringSplitOptions.RemoveEmptyEntries)
+        numbers.Split(
+          [| ','; '\n' |], StringSplitOptions.RemoveEmptyEntries)
         |> Array.map int
         |> Seq.sum
 ```
 ## Custom delimiter passed by the user
-As we expand the functions of our String Calculator we have to support any single character delimiter, for example, a colon.
+As we expand our String Calculator functions, we have to support any single character delimiter, for example, a colon.
 Here is the test:
 ```
 [<Fact>]
@@ -68,7 +69,7 @@ let extractNumbers (numbers: string) =
     if (startsWithCustomDelimeter) then numbers.[4..numbers.Length] 
 	else numbers
 ```
-We can see two branches. The former takes care of a case when we have a custom delimiter. When this part is called, our input looks like this "//;\n1;2"
+We can see two branches. The former takes care of a case when we have a custom delimiter. When calling this part, our input looks like this "//;\n1;2"
 The latter case is the simplest one with a single number or a default separator.
 ExtractDelimiter is more interesting:
 ```
@@ -85,17 +86,17 @@ let extractDelimiter (numbers: string) =
         defaultDelimiters
 ```
 Stay with me! It's not that scary. When we find a custom delimiter, we concatenate it with a standard one - a comma and a newline and return such array. 
-We didn't find a custom delimiter? Just return a default delimiters.
-Steps 3 and 4 finished! Full code is available on [github](https://github.com/jciechowski/StringCalculatorKataFSharp/commits/step-3-and-4). 
+Didn't we find a custom delimiter? Just return a default delimiters.  
+We finished steps 3 and 4. Full code is available on [github](https://github.com/jciechowski/StringCalculatorKataFSharp/commits/step-3-and-4).   
 Now it's time to add some functional look and feel.
 ## Refactor
 I won't describe every line I've changed. I will explain the rules that I've followed when doing the refactor. 
 - Get rid of ifs and use pattern matching, even for booleans
-- Introduce simple types for a better domain modeling
+- Introduce simple types for better domain modeling
 - Use pipes and composition as often as possible. We used pipelining before the refactor anyway. I was able to add some composition, though.
 
 And that's all. A more exhaustive list can be found at  [Scott Wlaschin](https://twitter.com/ScottWlaschin)  [blog](https://fsharpforfunandprofit.com/learning-fsharp/#dos-and-donts).
-Rest of the code resides on  [github](https://github.com/jciechowski/StringCalculatorKataFSharp/commits/refactor).
+The rest of the code resides on  [github](https://github.com/jciechowski/StringCalculatorKataFSharp/commits/refactor).
 
 I feel like that's enough for today's episode. Next time we will look at railway oriented programming and implement a few more steps.
 
