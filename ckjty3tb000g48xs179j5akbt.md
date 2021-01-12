@@ -52,4 +52,4 @@ The final stage looks like this:
 ![git-log.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1610452801084/dekkDFiBV.png)
 
 
-Partial file staging is a powerful feature. At first glance, it can look cumbersome and not very intuitive. I use it daily, and after a few tries, it became your second nature.
+Partial file staging is a powerful feature. At first glance, it can look cumbersome and not very intuitive. I use it daily, and after a few tries, it became my second nature.
